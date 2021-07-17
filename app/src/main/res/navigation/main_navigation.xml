@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/gameFragment">
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.gabriel.personal.projects.jogodavelha.ui.game.GameFragment"
+        android:label="game_fragment"
+        tools:layout="@layout/game_fragment" >
+        <action
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/gameFragment"
+            android:id="@+id/action_gameFragment_self"
+            app:destination="@id/gameFragment" />
+    </fragment>
+</navigation>
